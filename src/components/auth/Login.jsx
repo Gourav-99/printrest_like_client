@@ -17,7 +17,10 @@ const Login = () => {
     }
   };
   const handleGoogleOauth = () => {
-    window.open("http://localhost:8080/oauth/google", "_self");
+    window.open(
+      "https://3z5n8hb7u8.execute-api.ap-south-1.amazonaws.com/oauth/google",
+      "_self"
+    );
   };
   return (
     <section className="bg-neutral-200 dark:bg-neutral-700">
