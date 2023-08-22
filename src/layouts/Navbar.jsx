@@ -6,6 +6,7 @@ import { SearchContext } from "../components/contexts/SearchContext";
 
 const Navbar = () => {
   const auth = useSelector((state) => state.auth);
+  console.log("auth", auth);
   const dispatch = useDispatch();
   const location = useLocation();
   const [route, setRoute] = useState();
