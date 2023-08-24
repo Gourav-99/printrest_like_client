@@ -9,7 +9,7 @@ export const loginUser = (user) => async (dispatch) => {
         "Content-Type": "application/json",
       },
     });
-
+    console.log("login data", res.data);
     dispatch({ type: "LOGIN_USER", payload: res.data });
     toast.success("Login successful");
   } catch (error) {
